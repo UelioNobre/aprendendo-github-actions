@@ -32,8 +32,8 @@ describe('Exemplo de conjunto de testes', () => {
   });
 
   // Teste que falha
-  test('Teste que falha', () => {
+  test('Teste que não falha mais', () => {
     console.log('Teste 2');
-    expect(2 * 2).toBe(1);
+    expect(2 * 2).toBe(4);
   });
 });

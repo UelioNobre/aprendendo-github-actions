@@ -20,6 +20,10 @@ jobs:
     name: Executando testes como Jest
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
       - run: npm install
       - run: npm run test
     needs: [check-bats-version]
